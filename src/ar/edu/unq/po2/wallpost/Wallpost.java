@@ -45,5 +45,6 @@ public class Wallpost {
 
 	public void toggleFeatured() {
 		this.isFeatured=! (this.isFeatured);
+		
 	}
 }
