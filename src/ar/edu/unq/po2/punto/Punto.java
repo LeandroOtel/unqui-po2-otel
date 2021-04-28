@@ -9,7 +9,6 @@ public class Punto {
 <<<<<<< Upstream, based on branch 'main' of https://github.com/LeandroOtel/unqui-po2-otel.git
 		this.setXY(x, y);
 	}
-	
 	public void setXY(float x,float y) {
 		this.setX(x);
 		this.setY(y);
