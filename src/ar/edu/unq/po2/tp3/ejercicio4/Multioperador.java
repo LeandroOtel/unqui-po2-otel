@@ -1,4 +1,4 @@
-package ar.edu.unq.tp3.ejercicio4;
+package ar.edu.unq.po2.tp3.ejercicio4;
 
 import java.util.ArrayList;
 import java.util.List;
