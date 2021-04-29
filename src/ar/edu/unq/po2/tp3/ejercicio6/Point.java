@@ -52,10 +52,10 @@ public class Point {
 	}
 
 
-	public Point sumarseCon(Point punto33) {
+	public Point sumarseCon(Point punto) {
 		
-		int x = this.getX() + punto33.getX();
-		int y = this.getY() + punto33.getY();
+		int x = this.getX() + punto.getX();
+		int y = this.getY() + punto.getY();
 		
 		Point nuevoPunto = new Point(x,y);
 
