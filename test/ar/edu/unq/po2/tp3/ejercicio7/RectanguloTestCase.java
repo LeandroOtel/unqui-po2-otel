@@ -25,7 +25,7 @@ class RectanguloTestCase {
 		//this.punto14 = new Point(1,4);
 		//this.punto41 = new Point(4,1);
 		//this.punto44 = new Point(4,4);
-		this.rectangulo=new Rectangulo(punto11, 3, 3);
+		this.rectangulo=new Rectangulo(punto11, 2, 3);
 		
 		
 	}
@@ -51,11 +51,32 @@ class RectanguloTestCase {
 
 		
 		assertEquals(this.rectangulo.getEsquinaSuperiorIzquierda().getX(), 1);
-		assertEquals(this.rectangulo.getEsquinaSuperiorIzquierda().getY(), 4);
+		assertEquals(this.rectangulo.getEsquinaSuperiorIzquierda().getY(), 3);
 		
 		
 		assertEquals(this.rectangulo.getEsquinaSuperiorDerecha().getX(), 4);
-		assertEquals(this.rectangulo.getEsquinaSuperiorDerecha().getY(), 4);
+		assertEquals(this.rectangulo.getEsquinaSuperiorDerecha().getY(), 3);
 		
+	}
+	
+	@Test
+	void testArea() {
+		assertEquals(this.rectangulo.area(), 6);
+	}
+	
+	
+	
+	
+	@Test
+	void testPerimetro() {
+		assertEquals(this.rectangulo.perimetro(), 10);
+	}
+	
+	
+	
+	
+	@Test
+	void tipoDeRectangulo() {
+		assertEquals(this.rectangulo.tipo(), "horizontal");
 	}
 }

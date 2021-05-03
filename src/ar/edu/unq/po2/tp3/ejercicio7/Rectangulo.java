@@ -32,6 +32,10 @@ public class Rectangulo {
 		
 		esquinaInferiorDerecha = new Point(p.getX()+x, p.getY());
 		
+		alto = y;
+		
+		ancho = x;
+		
 	}
 	
 	public Point getEsquinaSuperiorIzquierda() {
@@ -44,9 +48,19 @@ public class Rectangulo {
 	}
 	
 	
+	
+	
+	
+	
+	
 	public Point getEsquinaSuperiorDerecha() {
 		return esquinaSuperiorDerecha;
 	}
+	
+	
+	
+	
+	
 	public void setEsquinaSuperiorDerecha(Point x) {
 		this.esquinaSuperiorDerecha = x;
 	}
@@ -55,9 +69,17 @@ public class Rectangulo {
 	public Point getEsquinaInferiorIzquierda() {
 		return esquinaInferiorIzquierda;
 	}
+	
+	
+	
+	
+	
 	public void setEsquinaInferiorIzquierda(Point x) {
 		this.esquinaInferiorIzquierda = x;
 	}
+	
+	
+	
 	
 	
 	public Point getEsquinaInferiorDerecha() {
@@ -75,9 +97,17 @@ public class Rectangulo {
 	}
 	
 	
+	
+	
+	
+	
+	
 	public void setAlto(Integer alto) {
 		this.alto = alto;
 	}
+	
+	
+	
 	
 	
 	public Integer getAncho() {
@@ -87,5 +117,36 @@ public class Rectangulo {
 	
 	public void setAncho(Integer ancho) {
 		this.ancho = ancho;
+	}
+	
+	
+	
+	
+	
+	
+	public int area() {
+		return alto * ancho;
+	}
+	
+	
+	
+	
+	
+	
+	public int perimetro() {
+		return (2*alto) + (2* ancho);
+	}
+	
+	
+	
+	
+	
+	public String tipo() {
+		
+		String tipo = new String();
+
+		if (ancho > alto) {tipo = "horizontal";}
+		else tipo = "vertical";
+		return tipo;
 	}
 }
