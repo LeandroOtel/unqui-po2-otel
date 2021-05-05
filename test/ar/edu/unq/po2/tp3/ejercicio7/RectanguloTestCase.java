@@ -3,10 +3,11 @@ package ar.edu.unq.po2.tp3.ejercicio7;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.tp3.ejercicio7.Rectangulo;
+//import ar.edu.unq.po2.tp3.ejercicio7.Rectangulo;
 import ar.edu.unq.po2.tp3.ejercicio6.Point;
 
 class RectanguloTestCase {
