@@ -37,6 +37,14 @@ class EquipoDeTrabajoTestCase {
 		
 		
 	}
+	
+	@Test
+	void nombreEquipo() {
+		assertEquals(this.equipo1.getNombre(), "equipo1");
+	}
+	
+	
+	
 	@Test
 	void promedioEdades() {
 		assertEquals(this.equipo1.promedioEdades(), 31);
