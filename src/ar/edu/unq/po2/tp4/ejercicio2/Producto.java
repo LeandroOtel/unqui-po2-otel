@@ -17,7 +17,7 @@ public abstract class Producto {
 	}
 	
 	
-	public Double obtenerPrecio() {
+	protected Double obtenerPrecio() {
 		return precio;
 	}
 	
