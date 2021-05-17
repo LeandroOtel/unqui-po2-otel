@@ -1,6 +1,6 @@
-package ar.edu.unq.po2.tp4.ejercicio2;
+package ar.edu.unq.po2.tp4.ejercicio3;
 
-public abstract class Producto{
+public abstract class Producto implements Cobrable{
 	private String nombre;
 	private Double precio;
 	private int stock;
@@ -22,6 +22,15 @@ public abstract class Producto{
 	}
 	
 	
+	
+	public void registrarEnCaja(Caja unaCaja) {
+		Double x = this.getPrecio();
+		
+		unaCaja.addMonto(x);
+		
+		this.quitarUno();
+		
+	}
 	
 	
 	public void setPrecio(Double unPrecio) {

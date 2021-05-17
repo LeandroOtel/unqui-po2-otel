@@ -2,14 +2,18 @@ package ar.edu.unq.po2.tp4.ejercicio2;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 
 class CajaTestCase {
 
 	private Caja caja1;
 	private Cooperativa bolsonYerba;
 	private Tradicional gaseosa;
+
 	
 	@BeforeEach
 	void setUp() throws Exception{
@@ -19,11 +23,9 @@ class CajaTestCase {
 	
 	
 	
-	
-	
 	}
 
-	
+
 	
 	@Test
 	void cajaRegistraUnProductoTradicional() {
