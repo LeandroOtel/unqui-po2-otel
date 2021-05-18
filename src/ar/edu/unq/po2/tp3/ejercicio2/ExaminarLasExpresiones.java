@@ -4,7 +4,7 @@ public class ExaminarLasExpresiones {
 	public static void main(String[] args) {
 		String a = "abc";
 		String s = a;
-		String t;
+		//String t;
 		System.out.print(a); // abc
 		System.out.print(s.length()); //  3
 		//System.out.print(t.length()); no funciona porque t no tiene elementos

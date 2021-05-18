@@ -1,15 +1,10 @@
 package ar.edu.unq.po2.tp3.counter;
 
-import static org.junit.jupiter.api.Assertions.*; 
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Counter {
 	private List<Integer> arregloDeEnteros = new ArrayList<Integer>();
