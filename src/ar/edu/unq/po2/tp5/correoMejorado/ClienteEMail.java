@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ClienteEMail {
 	
 	private Pop servidor;
+	
 	/*De esta manera, el clienteEMail guarda una Interface en su servidor, que 
 	 * responde a los mensajes que le corresponden. Así la Interface 
 	 * IServidor de antes queda dividida en sus dos responsabilidades.
