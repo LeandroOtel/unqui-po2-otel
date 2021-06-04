@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp8.ej1;
+package ar.edu.unq.po2.tp7.ej1;
 
 public class Teoria {
  /*

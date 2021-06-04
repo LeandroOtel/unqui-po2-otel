@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp8.ej2;
+package ar.edu.unq.po2.tp7.ej2;
 
 public class Trigo implements Cultivo{
 
