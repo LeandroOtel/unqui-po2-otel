@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp3.counter;
+package ar.edu.unq.po2.tp3.ejercicio1;
 
 
 import java.util.ArrayList;
