@@ -13,8 +13,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 import org.mockito.Mockito;
 
-import ar.edu.unq.po2.tp6.Poquer.Carta;
-import ar.edu.unq.po2.tp6.Poquer.PoquerStatus;
+import ar.edu.unq.po2.tp6.poquer.Carta;
+import ar.edu.unq.po2.tp6.poquer.PoquerStatus;
 
 
 public class PoquerTest {

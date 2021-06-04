@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.tp6.Poquer.Carta;
+import ar.edu.unq.po2.tp6.poquer.Carta;
 
 public class CartaTest {
 	private Carta dk;

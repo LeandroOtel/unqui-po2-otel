@@ -8,6 +8,9 @@ import static org.mockito.Mockito.when;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp6.poquer.Carta;
+import ar.edu.unq.po2.tp6.poquer.PoquerStatus;
+
 public class PoquerTestCase {
 	private PoquerStatus poquerStatus;
 	
