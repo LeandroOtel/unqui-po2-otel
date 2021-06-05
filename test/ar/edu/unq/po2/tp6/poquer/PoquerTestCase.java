@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp6.Poquer;
+package ar.edu.unq.po2.tp6.poquer;
 
 
 import static org.junit.Assert.assertEquals;
