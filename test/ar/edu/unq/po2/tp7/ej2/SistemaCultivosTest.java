@@ -62,7 +62,7 @@ private Soja s4;
 	}
 	
 	@Test
-	void sistema2() {
+	void unaRegionAdentroDeOtra() {
 		this.regionDeCultivo3.agregarCultivo(t1);
 		this.regionDeCultivo3.agregarCultivo(t1);
 		this.regionDeCultivo3.agregarCultivo(t1);
@@ -72,7 +72,7 @@ private Soja s4;
 		this.regionDeCultivo2.agregarCultivo(s1);
 		this.regionDeCultivo2.agregarCultivo(s1);
 		this.sistemaDeCultivos2.agregarCultivoAlSistema(regionDeCultivo2);
-		assertEquals(this.sistemaDeCultivos2.sumarGanancias(), 2000.0);
+		assertEquals(this.sistemaDeCultivos2.sumarGanancias(), 450.0);
 	}
 
 }
