@@ -22,7 +22,7 @@ public class Ejercito implements Caracter{
 		this.ejercito.remove(c);
 	}
 	
-	public ArrayList<Caracter> getejercito() {
+	public ArrayList<Caracter> getEjercito() {
 		return this.ejercito;
 	}
 	
