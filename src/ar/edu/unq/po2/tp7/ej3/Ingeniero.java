@@ -5,7 +5,7 @@ public class Ingeniero implements Caracter{
 	private Integer lajas;
 	
 	
-	public Ingeniero(Integer i, String nombre) {
+	public Ingeniero(Integer i) {
 		super();
 		this.setLajas(i);
 	
