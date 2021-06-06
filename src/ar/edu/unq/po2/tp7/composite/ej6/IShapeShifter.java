@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.ej6;
+package ar.edu.unq.po2.tp7.composite.ej6;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.ej4;
+package ar.edu.unq.po2.tp7.composite.ej4;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,6 +8,10 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp7.composite.ej4.Archivo;
+import ar.edu.unq.po2.tp7.composite.ej4.Directorio;
+import ar.edu.unq.po2.tp7.composite.ej4.FileSystem;
 
 class SistemaDeArchivosTest {
 

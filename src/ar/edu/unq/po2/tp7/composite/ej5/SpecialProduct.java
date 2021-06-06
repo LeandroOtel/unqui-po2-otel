@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.ej5;
+package ar.edu.unq.po2.tp7.composite.ej5;
 
 public class SpecialProduct extends Product{
 

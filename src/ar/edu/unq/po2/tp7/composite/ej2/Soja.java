@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.ej2;
+package ar.edu.unq.po2.tp7.composite.ej2;
 
 public class Soja implements Cultivo{
 	

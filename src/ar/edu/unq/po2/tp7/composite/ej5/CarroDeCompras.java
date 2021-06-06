@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.ej5;
+package ar.edu.unq.po2.tp7.composite.ej5;
 
 import java.util.ArrayList;
 import java.util.List;

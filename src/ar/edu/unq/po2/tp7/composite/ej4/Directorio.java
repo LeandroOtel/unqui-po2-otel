@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7.ej4;
+package ar.edu.unq.po2.tp7.composite.ej4;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
