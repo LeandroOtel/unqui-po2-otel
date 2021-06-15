@@ -25,6 +25,10 @@ public class ServidorDeportivo implements Servidor{
 	public void registrarse() {
 		this.aplicacion.agregarServidor(this, this.intereses);
 	}
+	
+	public void agregarPartido(Partido nuevoP) {
+		this.partidos.add(nuevoP);
+	}
 
 	public AplicacionDeportiva getAplicacion() {
 		return aplicacion;
