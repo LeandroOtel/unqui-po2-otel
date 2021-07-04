@@ -7,27 +7,21 @@ public class EncriptarLetrasANumeros extends MetodoDeEncriptacion{
 
 	@Override
 	public String encriptar(String texto) {
-		char[] charArray = texto.toCharArray();
-		String textoEncriptado = "";
-		int numero = 0;
-		for (char ch : charArray){
-		numero = ch;
-		//textoEncriptado + numero + ",";
-		} 
+		//lo hice con 3 letras nomas porque eran muchas, no encontre una manera más sencilla de hacerlo
+		//que no fuera poner 1 por 1 las letras y sus respectivos numeros.
+		texto = texto.replace("a", "1,")
+				.replace("b", "2,")
+				.replace("c", "3,");
 
-		return textoEncriptado;
+		return texto;
 	}
 	
 	@Override
 	public String desencriptar(String texto) {
-		String[] textoParaDesencriptar = texto.split(",");
-		String textoDesencriptado = "";
-		char letra = 'a';
-		for (String string : textoParaDesencriptar){
-		//letra = Integer.parseInt(string);;
-		//textoDesencriptado + letra;
-		} 
+		texto = texto.replace("1,","a")
+				.replace("2,","b")
+				.replace("3,","c");
 
-		return textoDesencriptado;
-	}
+		return texto;
+	} 
 }

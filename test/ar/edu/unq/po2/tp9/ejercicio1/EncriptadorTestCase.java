@@ -23,7 +23,25 @@ class EncriptadorTestCase {
 	@Test
 	void encriptadorDeVocales() {
 		
-		assertEquals(this.encriptador.encriptar("tul"), "tal");
+		assertEquals(this.encriptador.encriptar("aeiou"), "eioua");
+	}
+	
+	@Test
+	void encriptadorDeVocalesInvertido() {
+		
+		assertEquals(this.encriptador.desencriptar("aeiou"), "uaeio");
+	}
+	
+	@Test
+	void encriptadorDeNumeros() {
+		this.encriptador.setMetodoDeEncriptacion(numeros);
+		assertEquals(this.encriptador.encriptar("abc"), "1,2,3,");
+	}
+	
+	@Test
+	void encriptadorDeNumerosInvertido() {
+		this.encriptador.setMetodoDeEncriptacion(numeros);
+		assertEquals(this.encriptador.desencriptar("1,2,3,"), "abc");
 	}
 
 }
