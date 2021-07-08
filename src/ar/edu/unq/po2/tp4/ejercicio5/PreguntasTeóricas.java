@@ -10,14 +10,14 @@ public class PreguntasTeóricas {
 
 	4. Durante la iteración en Smalltalk no hace falta distinguir 
 		si el objeto es una Persona o Mascota para poder imprimir su 
-		nombre.Este mecanismo se llama polimorfismo, ya que 
-		distintos objetos saben responder los mismos mensajes. 
+		nombre.Este mecanismo se llama encapsulamiento, ya que 
+		el estado de los objetos esta oculto.
 		Ojo, no es completo, ya que nomas saben responder 1 mensaje
 		en común. En este caso, el getNombre.
 		Ahora, si hablamos de Java, hace falta cuando hacemos una
 		colección aclarar el tipo de Objetos con los cuales estamos
-		trabajando, entonces no sería posible crear una colección que 
-		contengan tanto mascotas como personas.
+		trabajando y la colección, entonces no sería posible crear una colección que 
+		contengan tanto mascotas como personas. 
 
 	5.Tanto Mascota como Persona podrían responder los mismos 
 	mensajes si heredaran de una Superclase su estructura y 
