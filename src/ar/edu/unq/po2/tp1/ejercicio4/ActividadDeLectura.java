@@ -11,16 +11,42 @@ public class ActividadDeLectura {
 
 		1.¿Qué significa el acceso directo a las variables? De un ejemplo.
 
-		Es el ejercicio de usar las variables en TODOS los metodos que las requieran.
+		Es el acceso a las variables sin utilizar los métodos getter y setter.
+		Es correcto utilizar el acceso directo a las variables estando adentro mismo de una clase.
 		En caso de tener clases con pocos métodos es conveniente, porque generar getters y setters 
-		aumentaría mucho los métodos de la clase. Otro problema es si en al´gun momento se quieren cambiar 
-		esas variables, habría que ir una por una.
+		aumentaría mucho los métodos de la clase.
+		
+		public class Persona{
+		
+			private int edad;
+			
+			public void crecer(){
+			this.edad = this.edad+1;
+			}
+		}
 
 		2.¿Qué significa el acceso indirecto a las variables? De un ejemplo.
 
 		Implica el uso de métodos getters and setter para obtener las variables. Exige más metodos, y no 
 		se lee tan fácil. Conviene cuando se escribe código con herencia, donde de una clase se desprenden 
-		subclases. Hay que definir getters y setters para cada variable
+		subclases. Hay que definir getters y setters para cada variable.
+		
+		public class Persona{
+		
+			private int edad;
+			
+			public void crecer(){
+			this.edad = this.setEdad(this.edad+1);
+			}
+			
+			public int getEdad(){
+			return this.edad;
+			}
+			
+			public void setEdad(int nuevaEdad){
+			this.edad = nuevaEdad;
+			}
+		}
 
 		3.Qué ventajas y desventajas presenta cada estrategia referida a los getters y setters.Fragmento 
 		del Libro: ​Smalltalk Best Practice Patterns​ de ​Kent Beck
