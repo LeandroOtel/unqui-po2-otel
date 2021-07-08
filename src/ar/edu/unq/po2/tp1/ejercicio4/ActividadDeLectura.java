@@ -51,8 +51,10 @@ public class ActividadDeLectura {
 		3.Qué ventajas y desventajas presenta cada estrategia referida a los getters y setters.Fragmento 
 		del Libro: ​Smalltalk Best Practice Patterns​ de ​Kent Beck
 
-		Por lo que entiendo hay unaa diferencia en cuanto a la seguridad, cuando algo es público es de 
-		libre uso y cuando algo es private no sale de su clase.
+		Hay unaa diferencia en cuanto a la seguridad, cuando algo es público es de 
+		libre uso y cuando algo es private no sale de su clase. Generar getters y setters para todas lass variables
+		de una clase implica escribir mas codigo casi duplicando los metodos de la clase. Los accesos directos
+		no estan buenos cuando se quiere subclasear. En cambio los indirectos se pueden redefinir.
 	 * 
 	 * 
 	 * 
@@ -62,8 +64,10 @@ public class ActividadDeLectura {
 		Parameter Method"?
 
 		Lo que sugiere el texto es a la hora de crear un objeto, habiéndole pasado los parámetros, 
-		en la implementación se cree el objeto y ahí mismo se llame a los setters para modificar sus 
-		variables.
+		en la implementación se cree el objeto y ahí mismo se asignen todas sus 
+		variables. Evitando asi que queden objetos con variables vacias (NULL), y no hacerlo con los setters
+		porque estarías probando dos cosas, que se inicialice el objeto, y que se modifique su estado con los 
+		setters. 
 
 		Actividad de lectura 3
 
@@ -76,6 +80,7 @@ public class ActividadDeLectura {
 		departamento deberán refrescar la memoria o cache de las variables que puedan llegar a haber 
 		cambiado por ejemplo al quitar un empleado habría que actualizar el saldo total del departamento.
 		" Collection Accessor Methods"
+		
 
 		La manera mas segura de generar acceso a elementos de una colección sería implementar un metodo que 
 		ejecute un bloque por cada elemento en la colección.
