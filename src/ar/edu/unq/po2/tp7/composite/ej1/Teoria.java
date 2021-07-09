@@ -25,7 +25,11 @@ public class Teoria {
   * interactucando con un objeto hoja o una composición. Que elementos 
   * de la programación orientada a objetos hacen posible esto? 
   * 
-  * La interface, o en algunos casos la clase abstracta. Permite al 
+  * Esto es posible gracias al encapsulamiento que no le permite saber al cliente
+  * como funciona cada clase, la herencia que genera una clase abstract y el polimorfismo
+  * donde un cliente envia un mismo mensaje sin preocuparse que clasde lo recibe, ya que
+  * todas entienden como responder el mismo mensaje.
+  * Las interfaces y clases abstractas, permite al 
   * cliente poder abstraerse del objeto con el cual esta trabajando.
   * */
 }
