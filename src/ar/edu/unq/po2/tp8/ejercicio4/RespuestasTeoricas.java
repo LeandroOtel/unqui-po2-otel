@@ -10,18 +10,13 @@ public class RespuestasTeoricas {
 	getTiempo.
 	
 	Operaciones primitivas:
+	public abstract boolean esHoraPico() -> operaciones abstractas
 	
-	La clase abstracta, define operaciones primitivas que luego las clases concretas definiran 
-	para implementar los pasos del algoritmo.En este caso, costoNeto que se encuentra en la clase 
-	abstracta, es redefinido en la clase concreta y se encuentra dentro del esqueleto
+	Operaciones concretas esHoraPico() y costoNeto() -> Son implementadas en la clase concreta 
 	
-	Operaciones concretas:
-	
-	getTiempo, getHoraDelDia. estan ya definidas en la clase abstracta, y son heredadas por las 
-	subclases.
-	
+	Operaciones concretas Clase Abstracta: getHoraDelDia() y getTiempo() -> Operaciones de la clase abstracta que heredan las subclases.
 	
 	Hook:
-	esHoraPico(), porque no esta definido, o mas bien por defecto no hace nada. La subclase 
-	seguramente cuando requiera hará un override del método*/
+	costoNeto() -> es el hook, porque tiene una definición estandar, pero luego es sobre escrito en la subclase
+	*/
 }
