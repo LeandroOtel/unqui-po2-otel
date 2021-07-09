@@ -29,9 +29,7 @@ public class EquipoDeTrabajo {
 	}
 	
 	public int promedioEdades() {
-		//int promedioDeEdades = 0;
-		//for (Persona integrante : equipo)
-		//	promedioDeEdades += integrante.getEdad();
+
 		int promedioDeEdades = 
 				equipo.stream().mapToInt(Persona->Persona.getEdad()).sum();
 		return promedioDeEdades/equipo.size();
