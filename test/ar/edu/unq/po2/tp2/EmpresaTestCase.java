@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -30,6 +32,11 @@ class EmpresaTestCase {
 		empleados.add(per);
 		empleados.add(tem);
 		this.emp= new Empresa("n1",1234,this.empleados, recibos);
+	}
+	
+	@Test
+	void collectiontest() {
+		assertEquals(per.calcularSueldoBruto(),20900.0);
 	}
 	
 	@Test
