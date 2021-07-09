@@ -2,7 +2,9 @@ package ar.edu.unq.po2.tp4.ejercicio4;
 
 public class ColeccionadorTeoria {
 	/*
-	1)GetFirstFrom devolverá el primer elemento de la colección. Esto dependerá 
+	1)Tanto Collection como List son interfaces, que no pueden ser instanciadas.
+	En tal caso podríamos crear una ArrayList o LinkedList para trabjar con las mismas
+	GetFirstFrom devolverá el primer elemento de la colección. Esto dependerá 
 	si la colección que elijamos mantiene o no un orden. Por ejemplo el caso de 
 	los Bags y multisets no tienen ese orden. En cambio, las listas son 
 	colecciones ordenadas (ej. ArrayList).
@@ -21,6 +23,7 @@ public class ColeccionadorTeoria {
 
 	4)El containsElement funcionará en cualquier coleccion que elijamos, 
 	devuelve si la coleccion corredspondiente contiene dicho elemento indicado.
+	Tambien en las listas
 
 
 
