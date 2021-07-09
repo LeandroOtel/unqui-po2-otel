@@ -1,25 +1,12 @@
 package ar.edu.unq.po2.tp5.Banco;
 
-public class CreditoHipotecario implements SolicitudDeCredito{
+public class CreditoHipotecario extends Credito{
 
-	private Cliente cliente;
-	private float monto;
-	private int plazoEnMeses;
-	
-	
-	
+
 	
 	public CreditoHipotecario(Cliente c, float m, int p) {
-		cliente = c;
-		monto = m;
-		plazoEnMeses = p;
+		super(c, m, p);
 	}
-
-	
-	public float cuotaPorMes() {
-		return monto/plazoEnMeses;
-	}
-	
 	
 	
 	@Override
@@ -44,30 +31,4 @@ public class CreditoHipotecario implements SolicitudDeCredito{
 		return (cliente.getEdad() + plazoEnMeses) < 65;
 	}
 	
-	public Cliente getCliente() {
-		return cliente;
-	}
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-
-	public float getMonto() {
-		return this.monto;
-	}
-
-	public void setMonto(float monto) {
-		this.monto = monto;
-	}
-
-	public int getPlazoEnMeses() {
-		return plazoEnMeses;
-	}
-
-	public void setPlazoEnMeses(int plazoEnMeses) {
-		this.plazoEnMeses = plazoEnMeses;
-	}
-
-
-
 }

@@ -10,9 +10,6 @@ public class Cliente {
 	private Propiedad propiedad;
 	
 	
-	
-	
-	
 	public Cliente(String n, String a, String d, int e, float s, Propiedad p) {
 		nombre = n;
 		apellido = a;
@@ -29,7 +26,7 @@ public class Cliente {
 		return sueldoNeto*12;
 	}
 	
-	public void solicitarCredito(SolicitudDeCredito s, Banco b) {
+	public void solicitarCredito(SolicitudDeCredito s, IBanco b) {
 		b.registrarSolicitud(s);
 	}
 	

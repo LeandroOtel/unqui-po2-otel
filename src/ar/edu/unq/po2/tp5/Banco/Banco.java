@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp5.Banco;
 import java.util.ArrayList;
 
 
-public class Banco {
+public class Banco implements IBanco{
 	ArrayList<Cliente> clientes;
 	ArrayList<SolicitudDeCredito> solicitudes;
 	
@@ -39,7 +39,7 @@ public class Banco {
 	}
 
 
-	private float montoTotalDeDineroADesembolsar() {
+	public float montoTotalDeDineroADesembolsar() {
 		float total = 0;
 		for (SolicitudDeCredito s : solicitudes) {
 			total += s.getMonto();
@@ -48,6 +48,7 @@ public class Banco {
 		return total;
 	}
 
+	@SuppressWarnings("unused")
 	private void desembolsarMontoPara(SolicitudDeCredito s) {
 		//esto debería quitar del banco el monto de la solicitud
 	}
