@@ -4,9 +4,9 @@ import javax.swing.DefaultListModel;
 
 @SuppressWarnings("serial")
 public class ListaDePalabrasOrdenadasAdapter extends DefaultListModel<String>{
-	private ListaDePalabrasOrdenadas2 lista;
+	private ListaDePalabrasOrdenadas lista;
 	
-	public ListaDePalabrasOrdenadasAdapter(ListaDePalabrasOrdenadas2 listaO) {
+	public ListaDePalabrasOrdenadasAdapter(ListaDePalabrasOrdenadas listaO) {
 		this.lista = listaO;
 	}
 	

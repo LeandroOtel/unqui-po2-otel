@@ -7,15 +7,13 @@ import java.util.List;
 
 public class ListaDePalabrasOrdenadas {
 	private List<String>palabras;
-	@SuppressWarnings("rawtypes")
-	private Comparator comparador;
 	
 
 	
 	
 	public ListaDePalabrasOrdenadas(){
 	this.palabras=new ArrayList<String>();
-	this.comparador=new Comparator();
+	//this.comparador=new Comparator();
 	}
 	public int compare(Object palabraA, Object palabraB) {
 	String a=((String)palabraA);
@@ -24,10 +22,10 @@ public class ListaDePalabrasOrdenadas {
 }
 
 	
-	@SuppressWarnings("unchecked")
+
 	public void agregarPalabra(String palabra){
 	this.palabras.add(palabra);
-	Collections.sort(this.palabras, this.comparador);
+	Collections.sort(this.palabras);//, this.comparador
 	}
 	
 	public Integer cantidadDePalabras(){
