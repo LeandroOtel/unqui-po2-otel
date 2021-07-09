@@ -15,7 +15,7 @@ public class PreguntasTeóricas {
 		Ojo, no es completo, ya que nomas saben responder 1 mensaje
 		en común. En este caso, el getNombre.
 		Ahora, si hablamos de Java, hace falta cuando hacemos una
-		colección aclarar el tipo de Objetos con los cuales estamos
+		colección(por ej arraylist) aclarar el tipo de Objetos con los cuales estamos
 		trabajando y la colección, entonces no sería posible crear una colección que 
 		contengan tanto mascotas como personas. 
 
