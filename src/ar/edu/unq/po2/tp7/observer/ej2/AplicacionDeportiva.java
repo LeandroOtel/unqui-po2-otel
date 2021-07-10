@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class AplicacionDeportiva {
+public class AplicacionDeportiva implements Observable{
 	private Map<String, List<Servidor>> suscriptores;
 	private List<Partido> partidos;
 	

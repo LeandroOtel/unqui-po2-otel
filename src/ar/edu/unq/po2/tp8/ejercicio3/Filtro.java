@@ -5,8 +5,8 @@ import java.util.List;
 
 public abstract class Filtro {
 	
-	public List<WikipediaPage> getSimilarPages(WikipediaPage page, List<WikipediaPage> wikipedia) {
-		
+	public final List<WikipediaPage> getSimilarPages(WikipediaPage page, List<WikipediaPage> wikipedia) {
+		//template method
 		List<WikipediaPage> paginasFiltradas = new ArrayList<WikipediaPage>();
 		for (WikipediaPage wiki : wikipedia) {
 			this.agregarSiPasaElFiltro(paginasFiltradas, page, wiki);
@@ -16,5 +16,5 @@ public abstract class Filtro {
 
 	protected abstract void agregarSiPasaElFiltro(List<WikipediaPage> paginasFiltradas, WikipediaPage page,
 			WikipediaPage wikipediaPage);
-
+	//operacion primitiva
 }
