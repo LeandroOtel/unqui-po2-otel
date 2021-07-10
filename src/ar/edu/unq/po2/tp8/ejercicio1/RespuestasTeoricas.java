@@ -16,7 +16,7 @@ public class RespuestasTeoricas {
 		algoritmo.
 		
 		4.que es un hook method?
-		d
+
 		métodos de los cuales uno se engancha para poder agregar comportamiento.d
 		Proveen comportamiento estandar que las subclases extienden si es necesario. Por default no hace nada.
 		Cuando alguna subclase lo implemente ahí lo redefinimos.
