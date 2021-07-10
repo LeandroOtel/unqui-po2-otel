@@ -4,11 +4,11 @@ import java.util.List;
 
 public class AplicacionMovil implements Servidor{
 
-	private AplicacionDeportiva aplicacion; 
+	private Observable aplicacion; 
 	private List<String> intereses;
 	private List<String> resultados;
 	
-	public AplicacionMovil(AplicacionDeportiva ad, List<String> interes, List<String> res) {
+	public AplicacionMovil(Observable ad, List<String> interes, List<String> res) {
 		super();
 		this.aplicacion = ad;
 		this.intereses = interes;
@@ -21,7 +21,7 @@ public class AplicacionMovil implements Servidor{
 	}
 	
 	@Override
-	public void updatePartido(AplicacionDeportiva ad, Partido p) {
+	public void updatePartido(Observable ad, Partido p) {
 		//bueno acá habría que ver si el update notifica con un mensaje, 
 		//o si se agrega el resultado a la lista de resultados
 		
@@ -32,11 +32,11 @@ public class AplicacionMovil implements Servidor{
 		this.resultados.add(nuevoP.getResultado());
 	}
 
-	public AplicacionDeportiva getAplicacion() {
+	public Observable getAplicacion() {
 		return aplicacion;
 	}
 
-	public void setAplicacion(AplicacionDeportiva aplicacion) {
+	public void setAplicacion(Observable aplicacion) {
 		this.aplicacion = aplicacion;
 	}
 

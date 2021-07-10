@@ -7,6 +7,7 @@ public interface Observable {
 		
 	public void agregarSuscriptor(Listener suscriptor, ArrayList<String> temasDeInteres);
 	public void registrar(Listener suscriptor, String tema);
+	public void agregarArticulo(Articulo nuevoArticulo);
 	public void notificarNuevoArticulo(Articulo nuevoArticulo);
 	public HashMap<String, ArrayList<Listener>> getSuscriptores();
 }

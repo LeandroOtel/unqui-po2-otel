@@ -3,10 +3,10 @@ package ar.edu.unq.po2.tp7.observer.ej1;
 import java.util.ArrayList;
 
 public class Investigador implements Listener{
-	private SistemaDeReferencias sistemaDeReferencia;
+	private Observable sistemaDeReferencia;
 	
 	
-	public Investigador(SistemaDeReferencias sr) {
+	public Investigador(Observable sr) {
 		this.sistemaDeReferencia = sr;
 	}
 	
@@ -15,7 +15,7 @@ public class Investigador implements Listener{
 	}
 
 	@Override
-	public void nuevoArticulo(SistemaDeReferencias sr, Articulo articulo) {
+	public void nuevoArticulo(Observable sr, Articulo articulo) {
 		/*no se aclara que debería pasar en esta implementacion, pero se podría corroborar
 		//que el investigador este suscripto al SR, y si es el caso, mandarle un msj "nuevo
 		//articulo". 
@@ -23,7 +23,6 @@ public class Investigador implements Listener{
 		 * tanto en el sistema de referencia, y cuando le llegue este msj contrastar si
 		 * entre sus temas, estan los temas del articulo e informarse.
 		 * */
-		
 	}
 	
 	public void subirArticulo(Articulo nuevoArticulo) {
@@ -33,11 +32,11 @@ public class Investigador implements Listener{
 	
 	
 
-	public SistemaDeReferencias getSistemaDeReferencia() {
+	public Observable getSistemaDeReferencia() {
 		return sistemaDeReferencia;
 	}
 
-	public void setSistemaDeReferencia(SistemaDeReferencias sistemaDeReferencia) {
+	public void setSistemaDeReferencia(Observable sistemaDeReferencia) {
 		this.sistemaDeReferencia = sistemaDeReferencia;
 	}
 }
