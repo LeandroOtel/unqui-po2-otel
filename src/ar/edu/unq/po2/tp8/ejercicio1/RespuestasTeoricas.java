@@ -3,7 +3,6 @@ package ar.edu.unq.po2.tp8.ejercicio1;
 public class RespuestasTeoricas {
 	/*
 	 * 1. donde se define el cuerpo del algoritmo?
-
 		En la clase abstracta
 
 		2.se puede redefinir el esqueleto?
