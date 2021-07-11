@@ -7,7 +7,7 @@ public class VideoJuego {
 
 		public VideoJuego(){
 		this.fichas = 0;
-		this.estadoMaquina = new SinFichas();
+		this.estadoMaquina = new SinFichas(this);
 }
 
 		public int getFichas(){

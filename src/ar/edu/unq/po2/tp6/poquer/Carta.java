@@ -23,7 +23,7 @@ public class Carta {
 	}
 	
 
-	private Integer valorNumerico() {
+	public Integer valorNumerico() {
 		if(valor.equals("J")) {return 11;}
 		else if(valor.equals("Q")) {return 12;}
 		else if(valor.equals("K")) {return 13;}
