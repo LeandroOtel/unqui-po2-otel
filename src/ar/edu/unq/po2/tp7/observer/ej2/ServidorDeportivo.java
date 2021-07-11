@@ -2,13 +2,17 @@ package ar.edu.unq.po2.tp7.observer.ej2;
 
 import java.util.List;
 
-public class ServidorDeportivo implements Servidor{
+public class ServidorDeportivo implements Listener{
 
-	private Observable aplicacion; 
+	private AplicacionDeportiva aplicacion; 
 	private List<String> intereses;
 	private List<Partido> partidos;
 	
-	public ServidorDeportivo(Observable ad, List<String> inte, List<Partido> part) {
+	private List<String> resultado;
+	private List<String> contrincantes;
+	private List<String> deporte;
+	
+	public ServidorDeportivo(AplicacionDeportiva ad, List<String> inte, List<Partido> part) {
 		super();
 		this.aplicacion = ad;
 		this.intereses = inte;
@@ -16,9 +20,12 @@ public class ServidorDeportivo implements Servidor{
 	}
 	
 	@Override
-	public void updatePartido(Observable ad, Partido p) {
-		//bueno acá habría que ver si el update notifica con un mensaje, 
-		//o si se agrega el partido a la lista de partidos
+	public void updatePartido(AplicacionDeportiva ad, Partido p) {
+		this.agregarPartido(p);
+		this.contrincantes.addAll(p.getContrincantes());
+		this.resultado.add(p.getResultado());
+		this.deporte.add(p.getDeporte());
+		
 		
 	}
 	
@@ -30,11 +37,11 @@ public class ServidorDeportivo implements Servidor{
 		this.partidos.add(nuevoP);
 	}
 
-	public Observable getAplicacion() {
+	public AplicacionDeportiva getAplicacion() {
 		return aplicacion;
 	}
 
-	public void setAplicacion(Observable aplicacion) {
+	public void setAplicacion(AplicacionDeportiva aplicacion) {
 		this.aplicacion = aplicacion;
 	}
 

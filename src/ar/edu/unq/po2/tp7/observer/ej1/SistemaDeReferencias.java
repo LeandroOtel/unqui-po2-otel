@@ -3,15 +3,11 @@ package ar.edu.unq.po2.tp7.observer.ej1;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class SistemaDeReferencias implements Observable{
+public class SistemaDeReferencias {
 	
 	private ArrayList<Articulo> articulos;
 	private HashMap<String, ArrayList<Listener>> suscriptores;
 	
-	
-	
-
-
 
 	public SistemaDeReferencias() {
 		this.setArticulos(new ArrayList<Articulo>());

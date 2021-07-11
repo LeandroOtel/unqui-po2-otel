@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Partido {
+	
 	private String resultado;
 	private List<String> contrincantes;
 	private String deporte;

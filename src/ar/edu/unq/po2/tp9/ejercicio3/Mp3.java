@@ -7,7 +7,7 @@ public class Mp3 {
 
 	public Mp3(Song cancion){
 	this.cancionActual= cancion;
-	this.modo= new Seleccion();
+	this.modo = new Seleccion(this);
 	}
 	
 	public String play() {
@@ -20,6 +20,8 @@ public class Mp3 {
 		return this.modo.stop(this);
 }
 
+	
+	
 	public void setModo(Modo nuevoModo){
 	this.modo = nuevoModo;}
 

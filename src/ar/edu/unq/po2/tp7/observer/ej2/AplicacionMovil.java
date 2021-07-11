@@ -2,13 +2,14 @@ package ar.edu.unq.po2.tp7.observer.ej2;
 
 import java.util.List;
 
-public class AplicacionMovil implements Servidor{
+public class AplicacionMovil implements Listener{
 
-	private Observable aplicacion; 
+	private AplicacionDeportiva aplicacion; 
 	private List<String> intereses;
+	
 	private List<String> resultados;
 	
-	public AplicacionMovil(Observable ad, List<String> interes, List<String> res) {
+	public AplicacionMovil(AplicacionDeportiva ad, List<String> interes, List<String> res) {
 		super();
 		this.aplicacion = ad;
 		this.intereses = interes;
@@ -21,9 +22,8 @@ public class AplicacionMovil implements Servidor{
 	}
 	
 	@Override
-	public void updatePartido(Observable ad, Partido p) {
-		//bueno acá habría que ver si el update notifica con un mensaje, 
-		//o si se agrega el resultado a la lista de resultados
+	public void updatePartido(AplicacionDeportiva ad, Partido p) {
+		this.agregarResultado(p);
 		
 	}
 	
@@ -32,11 +32,11 @@ public class AplicacionMovil implements Servidor{
 		this.resultados.add(nuevoP.getResultado());
 	}
 
-	public Observable getAplicacion() {
+	public AplicacionDeportiva getAplicacion() {
 		return aplicacion;
 	}
 
-	public void setAplicacion(Observable aplicacion) {
+	public void setAplicacion(AplicacionDeportiva aplicacion) {
 		this.aplicacion = aplicacion;
 	}
 

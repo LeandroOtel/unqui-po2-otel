@@ -5,26 +5,27 @@ import java.util.List;
 import java.util.Map;
 
 
-public class AplicacionDeportiva implements Observable{
-	private Map<String, List<Servidor>> suscriptores;
+public class AplicacionDeportiva {
+	
+	private Map<String, List<Listener>> suscriptores;
 	private List<Partido> partidos;
 	
-	public AplicacionDeportiva(Map<String, List<Servidor>> sus) {
+	public AplicacionDeportiva(Map<String, List<Listener>> sus) {
 		super();
 		this.suscriptores = sus;
 	}
 	
-	public void agregarServidor(Servidor nuevoServidor, List<String> intereses) {
+	public void agregarServidor(Listener nuevoListener, List<String> intereses) {
 		for (String interes : intereses) {
-			this.registrar(nuevoServidor,interes);
+			this.registrar(nuevoListener,interes);
 		}
 	}
 	
-	public void registrar(Servidor servidor, String interes) {
+	public void registrar(Listener nuevoListener, String interes) {
 		if(this.suscriptores.get(interes) == null) {
-			this.suscriptores.put(interes, new ArrayList<Servidor>());
+			this.suscriptores.put(interes, new ArrayList<Listener>());
 		}
-		this.suscriptores.get(interes).add(servidor);
+		this.suscriptores.get(interes).add(nuevoListener);
 	}
 	
 	public void agregarPartido(Partido partidoNuevo) {
@@ -39,22 +40,22 @@ public class AplicacionDeportiva implements Observable{
 			
 			{if (this.suscriptores.containsKey(interes))
 				
-				{for (Servidor interesados : this.suscriptores.get(interes))
+				{for (Listener interesados : this.suscriptores.get(interes))
 				
 					interesados.updatePartido(this, nuevoPartido);
 				}
 			
 			else {
-				this.suscriptores.put(interes, new ArrayList<Servidor>());
+				this.suscriptores.put(interes, new ArrayList<Listener>());
 				}
 			}
 	}
 
-	public Map<String, List<Servidor>> getSuscriptores() {
+	public Map<String, List<Listener>> getSuscriptores() {
 		return suscriptores;
 	}
 
-	public void setSuscriptores(Map<String, List<Servidor>> suscriptores) {
+	public void setSuscriptores(Map<String, List<Listener>> suscriptores) {
 		this.suscriptores = suscriptores;
 	}
 

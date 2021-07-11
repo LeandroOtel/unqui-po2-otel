@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Partida implements Observable{
+public class Partida {
 	
 	private Map<Integer, String> preguntas; 
 	private Map<Integer,String> respuestas; 
