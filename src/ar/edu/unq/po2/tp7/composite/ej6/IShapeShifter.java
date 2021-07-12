@@ -8,4 +8,5 @@ public interface IShapeShifter {
 	public int deepest();
 	public IShapeShifter flat();
 	public List<Integer> values();
+
 }

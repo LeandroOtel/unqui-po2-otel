@@ -8,7 +8,10 @@ public class Pasante extends Empleado{
 		this.cantidadDeHorasTrabajadas = cantHoras;
 	}
 	
-	@Override
+	public double sueldoBruto() {
+		return this.sueldoPorHorasTrabajadas();
+	}
+	
 	public double sueldoPorHorasTrabajadas() {
 		return this.cantidadDeHorasTrabajadas*40.0;
 	}

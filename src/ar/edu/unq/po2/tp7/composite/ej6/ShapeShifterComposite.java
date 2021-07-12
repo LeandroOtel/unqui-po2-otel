@@ -73,6 +73,5 @@ public class ShapeShifterComposite implements IShapeShifter{
 		
 		return values;
 	}
-	
 
 }

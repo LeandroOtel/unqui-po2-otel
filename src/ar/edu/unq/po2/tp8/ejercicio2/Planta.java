@@ -9,12 +9,16 @@ public class Planta extends Empleado{
 		this.cantidadDeHijos = hijos;
 	}
 	
-	@Override
-	public double sueldoBasico() {
+	public double sueldoBruto() {
+		return(
+		this.getSueldoBasico()
+		+this.sueldoPorEstadoCivileHijos());
+	}
+	
+	public double getSueldoBasico() {
 		return this.sueldoBasico;
 	}
 	
-	@Override
 	public double sueldoPorEstadoCivileHijos() {
 		return 150.0 * this.cantidadDeHijos;
 	}

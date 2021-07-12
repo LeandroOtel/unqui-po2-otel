@@ -29,8 +29,8 @@ public class PartidaTestCase {
 		this.preguntas = new HashMap<Integer, String>();
 		this.respuestas = new HashMap<Integer, String>();
 		
+		this.preguntas.put(0, "a");
 		this.preguntas.put(1, "a");
-		this.preguntas.put(2, "b");
 		
 		this.respuestas.put(0, "a");
 		this.respuestas.put(1, "a");

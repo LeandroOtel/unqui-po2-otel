@@ -1,6 +1,7 @@
 package ar.edu.unq.po2.tp8.ejercicio2;
 
 public class Temporario extends Empleado{
+	
 	private double sueldoBasico;
 	private int cantidadDeHorasTrabajadas;
 	private Boolean tieneHijos;
@@ -13,20 +14,26 @@ public class Temporario extends Empleado{
 		this.estaCasado = casado;
 }
 	
-	@Override
-	public double sueldoBasico() {
+	public double sueldoBruto() {
+		return
+		(this.getSueldoBasico()
+		+this.sueldoPorHorasTrabajadas()
+		+this.sueldoPorEstadoCivileHijos());
+	}
+	
+	public double getSueldoBasico() {
 		return this.sueldoBasico;
 	}
 	
-	@Override
+	
 	public double sueldoPorHorasTrabajadas() {
 		return this.cantidadDeHorasTrabajadas*5.0;
 	}
 	
-	@Override
+	
 	public double sueldoPorEstadoCivileHijos() {
 		if(this.tieneHijos==true || this.estaCasado==true) 
 			{return 100.0;}
-		return 0.0;
+		else {return 0.0;}
 	}
 }
