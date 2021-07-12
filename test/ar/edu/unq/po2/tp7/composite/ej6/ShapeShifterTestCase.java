@@ -65,4 +65,9 @@ class ShapeShifterTestCase {
 		assertTrue(this.c.deepest()==1);
 	}
 	
+	@Test 
+	void deepestF(){
+		assertTrue((d.compose(this.a.compose(b))).compose(e).deepest()==3);
+	}
+	
 }

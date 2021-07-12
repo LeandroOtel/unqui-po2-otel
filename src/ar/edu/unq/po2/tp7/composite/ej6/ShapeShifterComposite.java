@@ -39,15 +39,17 @@ public class ShapeShifterComposite implements IShapeShifter{
 		return nuevo;
 	}
 	
+	
 	@Override
 	public int deepest() {
 		
 		int total = 1;
-		
+		int maximoActual = 0;
 		for (IShapeShifter i : elements) {
-			total += i.deepest();
+			maximoActual = Math.max(maximoActual, i.deepest());
+
 		}
-		return total;
+		return total+maximoActual;
 	}
 	
 	@Override
@@ -73,5 +75,5 @@ public class ShapeShifterComposite implements IShapeShifter{
 		
 		return values;
 	}
-
+	
 }

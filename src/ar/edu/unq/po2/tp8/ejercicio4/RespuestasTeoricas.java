@@ -2,28 +2,58 @@ package ar.edu.unq.po2.tp8.ejercicio4;
 
 public class RespuestasTeoricas {
 	/*
-	 * Template Method: 
+	 * 
 	
-	Costofinal(), nomas le hace falta ser un "final", asumo que no lo pusieron para que no fuera 
-	obvia la respuesta. Asi no puede ser modificado, y todas las subclases deben respetar los 
-	mensajes que estan en el mismo. En este caso, entender el mensaje costoNeto, esHoraPico, 
-	getTiempo.
+	*public abstract class LlamadaTelefonica {
+		private int tiempo;
+		private int horaDelDia;
 	
-	Operaciones primitivas:
-	public abstract boolean esHoraPico() -> operaciones abstractas
+	public LlamadaTelefonica(int tiempo, int horaDelDia){
+		this.tiempo=tiempo;
+		this.horaDelDia=horaDelDia;
+	}
 	
-	Operaciones concretas esHoraPico() y costoNeto() -> Son implementadas en la clase concreta 
+	public int getTiempo(){			Operaciones concretas Clase Abstracta(la hereda la subclase)
+	return this.tiempo;
+	}
 	
-<<<<<<< Upstream, based on branch 'main' of https://github.com/LeandroOtel/unqui-po2-otel.git
-	Operaciones concretas Clase Abstracta: getHoraDelDia() y getTiempo() -> Operaciones de la clase abstracta que heredan las subclases.
-=======
-	Operaciones concretas:
-	getTiempo, getHoraDelDia. estan ya definidas en la clase abstracta, y son heredadas por las 
-	subclases.
+	public int getHoraDelDia(){			Operaciones concretas Clase Abstracta(la hereda la 
+	return this.horaDelDia;				subclase)
+	}
 	
->>>>>>> af23ad7 correcciones
+	public abstract boolean esHoraPico();	Operacion primitivas abstract
 	
-	Hook:
-	costoNeto() -> es el hook, porque tiene una definición estandar, pero luego es sobre escrito en la subclase
+	public float costoFinal(){							Template Method
+	
+		if(this.esHoraPico()){
+			return this.costoNeto()*1.2f*this.getTiempo();
+		}else{
+			return this.costoNeto()*this.getTiempo();
+		}
+	}
+	
+	public float costoNeto(){
+		return this.getTiempo()*1;			Hook, tiene una definición estandar. 
+											Luego es sobrescrito en la subclase
+	}
+	
+}
+
+	public classLlamadaDescuento extends LlamadaTelefonica{
+	
+	public LlamadaDescuento(int tiempo, int horaDelDia) {
+		super(tiempo, horaDelDia);
+	}
+	
+	@Override
+	public boolean esHoraPico() {			Operaciones concretas(implementacion)
+		return false;
+	}
+	
+	@Override
+	public float costoNeto(){				Operaciones concretas(implementacion)
+	return this.getTiempo()*0.95f;
+	}
+}
 	*/
 }
